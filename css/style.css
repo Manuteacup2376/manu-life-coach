@@ -5,6 +5,8 @@
   --teal-deep: #1F5951;
   --teal: #2F7A6E;
   --teal-soft: #CFE3DD;
+  --teal-wash: #E7F0EC;
+  --gold-wash: #F5EBD6;
   --gold: #C9A15C;
   --ink: #26302C;
   --ink-soft: #5B655F;
@@ -115,7 +117,7 @@ a { color: inherit; }
   border-radius: var(--radius-photo);
   overflow: hidden;
   background: var(--teal-soft);
-  min-height: 300px;
+  min-height: 420px;
 }
 
 .hero-photo img {
@@ -131,43 +133,77 @@ a { color: inherit; }
 }
 
 .hero-card {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 20px;
   text-decoration: none;
-  background: var(--teal-deep);
-  color: var(--cream);
-  border-radius: var(--radius-card);
-  padding: 28px;
-  position: relative;
+  background: var(--paper);
+  border: 1px solid var(--teal);
+  border-radius: 4px;
+  padding: 16px;
+  transition: filter 0.2s ease;
+}
+
+.hero-card--coach {
+  background: var(--teal-wash);
+  border-color: var(--teal);
+}
+
+.hero-card--program {
+  background: var(--gold-wash);
+  border-color: var(--gold);
+}
+
+.hero-card:hover { filter: brightness(0.97); }
+
+.hero-card-imgwrap {
+  flex-shrink: 0;
+  width: 40%;
+  aspect-ratio: 4 / 3;
+  border-radius: 3px;
   overflow: hidden;
-  transition: background 0.2s ease;
+  background: var(--teal-soft);
+  display: block;
 }
 
-.hero-card:nth-child(2) {
-  background: var(--gold);
-  color: var(--ink);
+.hero-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.hero-card:hover { filter: brightness(1.05); }
+.hero-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 
 .hero-card h3 {
   font-family: var(--font-display);
-  font-size: 26px;
+  font-size: 18px;
   font-weight: 600;
-  margin: 0 0 10px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin: 0;
+  color: var(--ink);
 }
 
 .hero-card p {
-  margin: 0 0 18px;
-  font-size: 15px;
-  max-width: 32ch;
+  margin: 0;
+  font-size: 13px;
+  color: var(--ink-soft);
 }
 
 .hero-card .go {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
+  color: var(--teal-deep);
   border-bottom: 1px solid currentColor;
-  padding-bottom: 2px;
+  padding-bottom: 1px;
+  align-self: flex-start;
 }
+
+.hero-card--program .go { color: #8a6a24; }
 
 /* ===== Testimonials ===== */
 .testimonials {
@@ -393,7 +429,7 @@ a { color: inherit; }
 /* ===== Responsive ===== */
 @media (max-width: 900px) {
   .hero-grid { grid-template-columns: 1fr; }
-  .hero-photo { min-height: 200px; }
+  .hero-photo { min-height: 280px; }
   .testimonial-grid { grid-template-columns: repeat(2, 1fr); }
   .side-boxes { grid-template-columns: 1fr; }
   .coach-layout { grid-template-columns: 1fr; }
@@ -406,6 +442,8 @@ a { color: inherit; }
   .testimonial-grid { grid-template-columns: 1fr; }
   .qual-grid { grid-template-columns: repeat(2, 1fr); }
   .site-header { flex-direction: column; align-items: flex-start; gap: 14px; }
+  .hero-card { flex-direction: column; align-items: stretch; }
+  .hero-card-imgwrap { width: 100%; aspect-ratio: 16 / 9; }
 }
 
 @media (prefers-reduced-motion: reduce) {
