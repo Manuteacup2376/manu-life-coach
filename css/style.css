@@ -117,7 +117,7 @@ a { color: inherit; }
   border-radius: var(--radius-photo);
   overflow: hidden;
   background: var(--teal-soft);
-  min-height: 120px;
+  min-height: 100px;
 }
 
 .hero-photo img {
@@ -135,7 +135,7 @@ a { color: inherit; }
 .hero-card {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
   text-decoration: none;
   background: var(--paper);
   border: 1px solid var(--teal);
