@@ -1,0 +1,107 @@
+{
+  "lang": "en",
+  "siteTitle": "Manu — Life Coach",
+  "nav": {
+    "home": "Home",
+    "coach": "About the Coach",
+    "program": "About the Program"
+  },
+  "hero": {
+    "heroImageAlt": "Manu, life coach",
+    "coachCard": {
+      "title": "About the Coach",
+      "excerpt": "Meet Manu and discover the story and philosophy behind her coaching."
+    },
+    "programCard": {
+      "title": "About the Program",
+      "excerpt": "See how the program works and what it can do for you."
+    },
+    "testimonialsTitle": "What clients say",
+    "testimonials": [
+      {
+        "quote": "Working with Manu changed the way I see my own potential. I finally feel in control of my choices.",
+        "name": "Giulia R."
+      },
+      {
+        "quote": "Practical, warm and honest. Every session gave me something I could actually use.",
+        "name": "Marco T."
+      },
+      {
+        "quote": "I came in stuck and left with a clear plan and the confidence to follow it.",
+        "name": "Sara B."
+      },
+      {
+        "quote": "The program gave me structure without ever feeling rigid. Highly recommended.",
+        "name": "Luca F."
+      }
+    ],
+    "faq": {
+      "title": "FAQ",
+      "cta": "Read the frequently asked questions",
+      "items": [
+        {
+          "q": "How long does the program last?",
+          "a": "The program runs over 8 weeks, with one session per week plus email support in between."
+        },
+        {
+          "q": "Are sessions online or in person?",
+          "a": "Both options are available — choose what works best for you when you book."
+        },
+        {
+          "q": "Do I need any prior experience with coaching?",
+          "a": "Not at all. The program is designed to meet you exactly where you are."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "cta": "Get in touch",
+      "email": "manu@example.com",
+      "phone": "+39 000 000 0000",
+      "instagram": "@manu.coach"
+    }
+  },
+  "coachPage": {
+    "title": "About the Coach",
+    "name": "Manu",
+    "role": "Certified Life Coach",
+    "bio": [
+      "Manu has spent over ten years helping people move from feeling stuck to feeling clear, confident and in charge of their own direction.",
+      "Her approach blends practical goal-setting with honest, human conversation — no jargon, no judgement, just real tools that work.",
+      "She believes lasting change happens in small, consistent steps, and her role is to walk alongside you as you take them."
+    ],
+    "qualificationsTitle": "Qualifications & Certifications",
+    "qualifications": [
+      { "image": "qual_1.jpg", "caption": "Certified Professional Life Coach" },
+      { "image": "qual_2.jpg", "caption": "Advanced Coaching Diploma" },
+      { "image": "qual_3.jpg", "caption": "NLP Practitioner Certificate" },
+      { "image": "qual_4.jpg", "caption": "Mindfulness & Wellbeing Training" },
+      { "image": "qual_5.jpg", "caption": "Continuing Education Certificate" }
+    ]
+  },
+  "programPage": {
+    "title": "About the Program",
+    "intro": "A step-by-step coaching journey built to help you move from where you are to where you want to be.",
+    "sections": [
+      {
+        "heading": "What it is",
+        "body": "An 8-week, one-to-one coaching program combining weekly live sessions with practical tools you can use straight away."
+      },
+      {
+        "heading": "Who it's for",
+        "body": "Anyone who feels ready for change but isn't sure where to start — whether that's in your career, relationships, or sense of purpose."
+      },
+      {
+        "heading": "How it works",
+        "body": "Each week builds on the last: we set clear goals, work through what's holding you back, and track real progress together."
+      },
+      {
+        "heading": "What you'll walk away with",
+        "body": "A clear personal roadmap, practical habits that stick, and the confidence to keep going after the program ends."
+      }
+    ]
+  },
+  "footer": {
+    "text": "© Manu — Life Coach. All rights reserved."
+  }
+}

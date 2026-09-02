@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About the Coach — Manu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="coach">
+
+<header class="site-header">
+  <a href="index.html" class="logo-link">
+    <img src="images/logo.jpg" alt="Manu logo" onerror="this.style.opacity='0.2'">
+  </a>
+  <div class="lang-toggle" role="group" aria-label="Language">
+    <button data-lang="en" aria-pressed="true">EN</button>
+    <button data-lang="it" aria-pressed="false">IT</button>
+  </div>
+</header>
+
+<nav class="site-nav wrap">
+  <a href="index.html" data-i18n="nav.home">Home</a>
+  <a href="about-coach.html" data-i18n="nav.coach">About the Coach</a>
+  <a href="about-program.html" data-i18n="nav.program">About the Program</a>
+</nav>
+
+<main class="wrap">
+
+  <div class="page-hero">
+    <a href="index.html" class="breadcrumb">← Home</a>
+    <h1 id="coachTitle">About the Coach</h1>
+  </div>
+
+  <div class="coach-layout">
+    <div class="coach-photo">
+      <img src="images/Manu_face_pic.jpg" alt="Manu" onerror="this.style.opacity='0.15'">
+    </div>
+    <div>
+      <h2 class="coach-name" id="coachName">Manu</h2>
+      <p class="coach-role" id="coachRole">Certified Life Coach</p>
+      <div class="bio" id="coachBio"></div>
+    </div>
+  </div>
+
+  <section class="qualifications">
+    <h2 id="qualificationsTitle">Qualifications & Certifications</h2>
+    <div class="qual-grid" id="qualGrid"></div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p id="footerText"></p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

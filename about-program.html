@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About the Program — Manu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="program">
+
+<header class="site-header">
+  <a href="index.html" class="logo-link">
+    <img src="images/logo.jpg" alt="Manu logo" onerror="this.style.opacity='0.2'">
+  </a>
+  <div class="lang-toggle" role="group" aria-label="Language">
+    <button data-lang="en" aria-pressed="true">EN</button>
+    <button data-lang="it" aria-pressed="false">IT</button>
+  </div>
+</header>
+
+<nav class="site-nav wrap">
+  <a href="index.html" data-i18n="nav.home">Home</a>
+  <a href="about-coach.html" data-i18n="nav.coach">About the Coach</a>
+  <a href="about-program.html" data-i18n="nav.program">About the Program</a>
+</nav>
+
+<main class="wrap">
+
+  <div class="page-hero">
+    <a href="index.html" class="breadcrumb">← Home</a>
+    <h1 id="programTitle">About the Program</h1>
+  </div>
+
+  <p class="program-intro" id="programIntro"></p>
+
+  <div class="program-sections" id="programSections"></div>
+
+</main>
+
+<footer class="site-footer">
+  <p id="footerText"></p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

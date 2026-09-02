@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manu — Life Coach</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+
+<header class="site-header">
+  <a href="index.html" class="logo-link">
+    <img src="images/logo.jpg" alt="Manu logo" onerror="this.style.opacity='0.2'">
+  </a>
+  <div class="lang-toggle" role="group" aria-label="Language">
+    <button data-lang="en" aria-pressed="true">EN</button>
+    <button data-lang="it" aria-pressed="false">IT</button>
+  </div>
+</header>
+
+<nav class="site-nav wrap">
+  <a href="index.html" data-i18n="nav.home">Home</a>
+  <a href="about-coach.html" data-i18n="nav.coach">About the Coach</a>
+  <a href="about-program.html" data-i18n="nav.program">About the Program</a>
+</nav>
+
+<main class="wrap">
+
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="hero-photo">
+        <img id="heroPhoto" src="images/Manu_face_pic.jpg" alt="Manu" onerror="this.style.opacity='0.15'">
+      </div>
+
+      <div class="hero-cards">
+        <a href="about-coach.html" class="hero-card" id="aboutCoachCard">
+          <h3 id="coachCardTitle">About the Coach</h3>
+          <p id="coachCardExcerpt">Meet Manu and discover the story behind her coaching.</p>
+          <span class="go">→</span>
+        </a>
+        <a href="about-program.html" class="hero-card" id="aboutProgramCard">
+          <h3 id="programCardTitle">About the Program</h3>
+          <p id="programCardExcerpt">See how the program works and what it can do for you.</p>
+          <span class="go">→</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="testimonials">
+      <h2 id="testimonialsTitle">What clients say</h2>
+      <div class="testimonial-grid" id="testimonialGrid"></div>
+    </div>
+
+    <div class="side-boxes">
+      <div class="info-box">
+        <h2 id="faqTitle">FAQ</h2>
+        <div id="faqList"></div>
+      </div>
+      <div class="info-box">
+        <h2 id="contactTitle">Contact</h2>
+        <ul class="contact-list" id="contactList"></ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p id="footerText"></p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
