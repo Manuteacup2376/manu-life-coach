@@ -115,7 +115,7 @@ a { color: inherit; }
   border-radius: var(--radius-photo);
   overflow: hidden;
   background: var(--teal-soft);
-  min-height: 420px;
+  min-height: 300px;
 }
 
 .hero-photo img {
