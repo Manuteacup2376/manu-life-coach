@@ -45,6 +45,8 @@ function renderNav(content) {
   document.querySelectorAll("[data-i18n='nav.coach']").forEach(el => el.textContent = content.nav.coach);
   document.querySelectorAll("[data-i18n='nav.program']").forEach(el => el.textContent = content.nav.program);
   document.querySelectorAll("[data-i18n='nav.home']").forEach(el => el.textContent = content.nav.home);
+  document.querySelectorAll("[data-i18n='nav.faq']").forEach(el => el.textContent = content.nav.faq);
+  document.querySelectorAll("[data-i18n='nav.contact']").forEach(el => el.textContent = content.nav.contact);
   document.title = content.siteTitle;
 }
 
@@ -57,6 +59,7 @@ function renderHome(content) {
   setText("#programCardExcerpt", h.programCard.excerpt);
   setText("#testimonialsTitle", h.testimonialsTitle);
   setText("#faqTitle", h.faq.title);
+  setText("#faqCta", h.faq.cta);
   setText("#contactTitle", h.contact.title);
 
   // Testimonials
@@ -71,16 +74,7 @@ function renderHome(content) {
     });
   }
 
-  // FAQ
-  const faqList = document.getElementById("faqList");
-  if (faqList) {
-    faqList.innerHTML = "";
-    h.faq.items.forEach((item) => {
-      const details = document.createElement("details");
-      details.innerHTML = `<summary>${escapeHtml(item.q)}</summary><p>${escapeHtml(item.a)}</p>`;
-      faqList.appendChild(details);
-    });
-  }
+  // FAQ (card only on the home page — full list lives on faq.html)
 
   // Contact
   const contactList = document.getElementById("contactList");
@@ -94,6 +88,21 @@ function renderHome(content) {
 
   const heroImg = document.getElementById("heroPhoto");
   if (heroImg) heroImg.alt = h.heroImageAlt;
+
+  // Hero caption (photo intro text)
+  const caption = document.getElementById("heroCaption");
+  if (caption && h.heroCaption) {
+    caption.innerHTML = "";
+    h.heroCaption.paragraphs.forEach((para) => {
+      const p = document.createElement("p");
+      p.textContent = para;
+      caption.appendChild(p);
+    });
+    const purpose = document.createElement("p");
+    purpose.className = "hero-caption-purpose";
+    purpose.innerHTML = `${escapeHtml(h.heroCaption.purposeLabel)}<br>&ldquo;${escapeHtml(h.heroCaption.purposeQuote)}&rdquo;`;
+    caption.appendChild(purpose);
+  }
 }
 
 function renderCoachPage(content) {
@@ -145,6 +154,22 @@ function renderProgramPage(content) {
   }
 }
 
+function renderFaqPage(content) {
+  const f = content.hero.faq;
+  setText("#faqPageTitle", f.title);
+
+  const list = document.getElementById("faqPageList");
+  if (list) {
+    list.innerHTML = "";
+    f.items.forEach((item) => {
+      const details = document.createElement("details");
+      details.className = "faq-page-item";
+      details.innerHTML = `<summary>${escapeHtml(item.q)}</summary><p>${escapeHtml(item.a)}</p>`;
+      list.appendChild(details);
+    });
+  }
+}
+
 function renderFooter(content) {
   setText("#footerText", content.footer.text);
 }
@@ -176,6 +201,7 @@ async function init() {
     if (document.body.dataset.page === "home") renderHome(content);
     if (document.body.dataset.page === "coach") renderCoachPage(content);
     if (document.body.dataset.page === "program") renderProgramPage(content);
+    if (document.body.dataset.page === "faq") renderFaqPage(content);
   } catch (err) {
     console.error(err);
   }
