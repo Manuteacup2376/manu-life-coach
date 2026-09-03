@@ -137,13 +137,9 @@ a { color: inherit; }
   border: 1px solid var(--teal-soft);
   border-radius: 4px;
   padding: 18px 22px;
+  display: flex;
   flex-direction: column;
   gap: 8px;
-  display: none;
-}
-
-.hero-caption.is-active-lang {
-  display: flex;
 }
 
 .hero-caption p {

@@ -27,12 +27,6 @@ function renderLangToggle(lang) {
     const isActive = btn.dataset.lang === lang;
     btn.setAttribute("aria-pressed", isActive ? "true" : "false");
   });
-
-  // Any element with data-lang="en"/"it" (e.g. the hard-coded hero caption)
-  // shows/hides itself to match the selected language.
-  document.querySelectorAll(".hero-caption[data-lang]").forEach((el) => {
-    el.classList.toggle("is-active-lang", el.dataset.lang === lang);
-  });
 }
 
 function bindLangToggle() {
@@ -94,6 +88,21 @@ function renderHome(content) {
 
   const heroImg = document.getElementById("heroPhoto");
   if (heroImg) heroImg.alt = h.heroImageAlt;
+
+  // Hero caption (photo intro text)
+  const caption = document.getElementById("heroCaption");
+  if (caption && h.heroCaption) {
+    caption.innerHTML = "";
+    h.heroCaption.paragraphs.forEach((para) => {
+      const p = document.createElement("p");
+      p.textContent = para;
+      caption.appendChild(p);
+    });
+    const purpose = document.createElement("p");
+    purpose.className = "hero-caption-purpose";
+    purpose.innerHTML = `${escapeHtml(h.heroCaption.purposeLabel)}<br>&ldquo;${escapeHtml(h.heroCaption.purposeQuote)}&rdquo;`;
+    caption.appendChild(purpose);
+  }
 }
 
 function renderCoachPage(content) {

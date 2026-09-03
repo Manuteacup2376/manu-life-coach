@@ -10,6 +10,14 @@
   },
   "hero": {
     "heroImageAlt": "Manu, life coach",
+    "heroCaption": {
+      "paragraphs": [
+        "Ciao, my name is Manuela Zaffarana, nice that you are visiting here to learn more about me and what coaching can do for you.",
+        "I think it is great that you have decided to explore coaching for yourself."
+      ],
+      "purposeLabel": "My purpose is",
+      "purposeQuote": "To help you find your path to and through Wonderland."
+    },
     "coachCard": {
       "title": "About the Coach",
       "excerpt": "Meet Manu and discover the story and philosophy behind her coaching."

@@ -28,6 +28,8 @@ Put your image files into the `images` folder, using **exactly these filenames**
 |---|---|
 | `logo.jpg` | top of every page (~6cm × 2cm) |
 | `Manu_face_pic.jpg` | large photo on the home page + top of "About the Coach" page |
+| `about_coach.jpg` | small "About the Coach" card on the home page |
+| `about_program.jpg` | small "About the Program" card on the home page |
 | `qual_1.jpg` … `qual_5.jpg` | the 5 qualification images on the "About the Coach" page |
 
 Just upload a new file with the same name to overwrite the old one — no code changes needed. Placeholder images are included so the site looks correct until you upload the real ones.
