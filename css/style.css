@@ -1,6 +1,6 @@
 /* ===== Design tokens ===== */
 :root {
-  --cream: #F5F0E4;grid
+  --cream: #F5F0E4;
   --cream-deep: #EDE5D2;
   --teal-deep: #1F5951;
   --teal: #2F7A6E;
@@ -109,11 +109,15 @@ a { color: inherit; }
 .hero-grid {
   display: grid;
   grid-template-columns: 1.15fr 1fr;
-  gap: 28px;
+  grid-template-rows: auto auto;
+  column-gap: 28px;
+  row-gap: 14px;
   align-items: stretch;
 }
 
 .hero-photo {
+  grid-column: 1;
+  grid-row: 1;
   border-radius: var(--radius-photo);
   overflow: hidden;
   background: var(--teal-soft);
@@ -126,7 +130,36 @@ a { color: inherit; }
   object-fit: cover;
 }
 
+.hero-caption {
+  grid-column: 1;
+  grid-row: 2;
+  background: var(--paper);
+  border: 1px solid var(--teal-soft);
+  border-radius: 4px;
+  padding: 18px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hero-caption p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--ink);
+}
+
+.hero-caption .hero-caption-purpose {
+  margin-top: 2px;
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-style: italic;
+  color: var(--teal-deep);
+  line-height: 1.5;
+}
+
 .hero-cards {
+  grid-column: 2;
+  grid-row: 1;
   display: grid;
   grid-template-rows: 1fr 1fr;
   gap: 8px;
@@ -256,6 +289,26 @@ a { color: inherit; }
   background: var(--paper);
   border: 1px solid var(--teal-soft);
   padding: 26px;
+  scroll-margin-top: 24px;
+}
+
+.info-box--link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: filter 0.2s ease;
+}
+
+.info-box--link:hover { filter: brightness(0.97); }
+
+.info-box--link p { margin: 0 0 14px; font-size: 14px; color: var(--ink-soft); }
+
+.info-box--link .go {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--teal-deep);
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 1px;
 }
 
 .info-box h2 { margin-top: 0; }
@@ -369,7 +422,7 @@ a { color: inherit; }
 
 .qual-item img {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 3 / 4;
   object-fit: cover;
   border: 1px solid var(--cream-deep);
   background: var(--paper);
@@ -416,6 +469,31 @@ a { color: inherit; }
   color: var(--ink-soft);
 }
 
+/* ===== FAQ page ===== */
+.faq-page-list {
+  max-width: 70ch;
+  margin: 30px 0 60px;
+}
+
+.faq-page-item {
+  border-bottom: 1px solid var(--cream-deep);
+  padding: 18px 0;
+}
+
+.faq-page-item summary {
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 17px;
+  color: var(--ink);
+}
+
+.faq-page-item p {
+  margin: 12px 0 0;
+  font-size: 15px;
+  color: var(--ink-soft);
+}
+
 /* ===== Footer ===== */
 .site-footer {
   border-top: 1px solid var(--cream-deep);
@@ -428,8 +506,10 @@ a { color: inherit; }
 
 /* ===== Responsive ===== */
 @media (max-width: 900px) {
-  .hero-grid { grid-template-columns: 1fr; }
-  .hero-photo { min-height: 280px; }
+  .hero-grid { grid-template-columns: 1fr; grid-template-rows: auto auto auto; }
+  .hero-photo { grid-column: 1; grid-row: 1; min-height: 280px; }
+  .hero-cards { grid-column: 1; grid-row: 2; }
+  .hero-caption { grid-column: 1; grid-row: 3; }
   .testimonial-grid { grid-template-columns: repeat(2, 1fr); }
   .side-boxes { grid-template-columns: 1fr; }
   .coach-layout { grid-template-columns: 1fr; }

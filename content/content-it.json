@@ -4,10 +4,20 @@
   "nav": {
     "home": "Home",
     "coach": "Chi è la Coach",
-    "program": "Il Programma"
+    "program": "Il Programma",
+    "faq": "FAQ",
+    "contact": "Contatti"
   },
   "hero": {
     "heroImageAlt": "Manu, life coach",
+    "heroCaption": {
+      "paragraphs": [
+        "Ciao, mi chiamo Manuela Zaffarana, sono felice che tu sia qui per scoprire di più su di me e su cosa può fare il coaching per te.",
+        "Penso sia fantastico che tu abbia deciso di esplorare il coaching per te stessa."
+      ],
+      "purposeLabel": "Il mio scopo è",
+      "purposeQuote": "Aiutarti a trovare la tua strada verso e attraverso Wonderland."
+    },
     "coachCard": {
       "title": "Chi è la Coach",
       "excerpt": "Scopri Manu, la sua storia e la filosofia dietro il suo metodo di coaching."
