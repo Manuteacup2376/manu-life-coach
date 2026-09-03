@@ -24,6 +24,8 @@
   <a href="index.html" data-i18n="nav.home">Home</a>
   <a href="about-coach.html" data-i18n="nav.coach">About the Coach</a>
   <a href="about-program.html" data-i18n="nav.program">About the Program</a>
+  <a href="faq.html" data-i18n="nav.faq">FAQ</a>
+  <a href="index.html#contactBox" data-i18n="nav.contact">Contact</a>
 </nav>
 
 <main class="wrap">
@@ -57,10 +59,15 @@
         </a>
       </div>
 
-      <div class="hero-caption">
+      <div class="hero-caption" data-lang="en">
         <p>Ciao, my name is Manuela Zaffarana, nice that you are visiting here to learn more about me and what coaching can do for you.</p>
         <p>I think it is great that you have decided to explore coaching for yourself.</p>
         <p class="hero-caption-purpose">My purpose is<br>&ldquo;To help you find your path to and through Wonderland.&rdquo;</p>
+      </div>
+      <div class="hero-caption" data-lang="it">
+        <p>Ciao, mi chiamo Manuela Zaffarana, sono felice che tu sia qui per scoprire di più su di me e su cosa può fare il coaching per te.</p>
+        <p>Penso sia fantastico che tu abbia deciso di esplorare il coaching per te stessa.</p>
+        <p class="hero-caption-purpose">Il mio scopo è<br>&ldquo;Aiutarti a trovare la tua strada verso e attraverso Wonderland.&rdquo;</p>
       </div>
     </div>
 
@@ -70,11 +77,12 @@
     </div>
 
     <div class="side-boxes">
-      <div class="info-box">
+      <a href="faq.html" class="info-box info-box--link" id="faqCard">
         <h2 id="faqTitle">FAQ</h2>
-        <div id="faqList"></div>
-      </div>
-      <div class="info-box">
+        <p id="faqCta">Read the frequently asked questions</p>
+        <span class="go">→</span>
+      </a>
+      <div class="info-box" id="contactBox">
         <h2 id="contactTitle">Contact</h2>
         <ul class="contact-list" id="contactList"></ul>
       </div>
