@@ -82,8 +82,8 @@ function renderHome(content) {
     contactList.innerHTML = `
       <li>✉️ <a href="mailto:${h.contact.email}">${escapeHtml(h.contact.email)}</a></li>
       <li>📞 <a href="tel:${h.contact.phone.replace(/[^+\d]/g, "")}">${escapeHtml(h.contact.phone)}</a></li>
-      <li>📷 ${escapeHtml(h.contact.instagram)}</li>
-      <li>💼 <a href="${h.contact.linkedinUrl}" target="_blank" rel="noopener">${escapeHtml(h.contact.linkedinLabel)}</a></li>
+      
+      <li>linkedin<a href="${h.contact.linkedinUrl}" target="_blank" rel="noopener">${escapeHtml(h.contact.linkedinLabel)}</a></li>
     `;
   }
   setText("#contactCta", h.contact.cta);
