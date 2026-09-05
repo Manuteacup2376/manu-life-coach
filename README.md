@@ -26,7 +26,7 @@ Put your image files into the `images` folder, using **exactly these filenames**
 
 | Filename | Where it appears |
 |---|---|
-| `logo.jpg` | top of every page (~6cm × 2cm) |
+| `logo1.png` | top of every page (~6cm × 2cm) |
 | `Manu_face_pic.jpg` | large photo on the home page + top of "About the Coach" page |
 | `about_coach.jpg` | small "About the Coach" card on the home page |
 | `about_program.jpg` | small "About the Program" card on the home page |
