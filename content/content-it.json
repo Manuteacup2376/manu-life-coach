@@ -19,30 +19,30 @@
       "purposeQuote": "Aiutarti a trovare la tua strada verso e attraverso Wonderland."
     },
     "coachCard": {
-      "title": "Chi è la Coach",
-      "excerpt": "Scopri Manu, la sua storia e la filosofia dietro il suo metodo di coaching."
+      "title": "Qualcosa Su Di Me",
+      "excerpt": "Scopri Manuela, il suo percorso e la sua filosofia di coaching."
     },
     "programCard": {
-      "title": "Il Programma",
-      "excerpt": "Scopri come funziona il programma e cosa può fare per te."
+      "title": "Cosa Aspettarti Dal Mio Coaching",
+      "excerpt": "Non do risposte, faccio domande: scopri come funziona il percorso."
     },
     "testimonialsTitle": "Cosa dicono i clienti",
     "testimonials": [
       {
-        "quote": "Lavorare con Manu ha cambiato il modo in cui vedo il mio potenziale. Finalmente mi sento in controllo delle mie scelte.",
-        "name": "Giulia R."
+        "quote": "La sessione introduttiva mi ha convinta subito del valore del percorso. Il coaching mi ha insegnato a ritrovare più velocemente il mio equilibrio dopo un momento difficile, a fare chiarezza sui miei valori e a mettere in discussione alcune delle storie che mi raccontavo da anni.",
+        "name": "Paula, Polonia"
       },
       {
-        "quote": "Pratica, calorosa e sincera. Ogni sessione mi ha dato qualcosa di davvero utile.",
-        "name": "Marco T."
+        "quote": "Manu mi ha aiutata moltissimo a trovare la mia strada e a mettere a fuoco le mie priorità. È stata bravissima a farmi vedere le cose con chiarezza, andando oltre le scuse che mi raccontavo, e a scuotermi quando serviva.",
+        "name": "Rob, Olanda"
       },
       {
-        "quote": "Sono arrivata bloccata e sono uscita con un piano chiaro e la sicurezza per seguirlo.",
-        "name": "Sara B."
+        "quote": "Manu ha una voce molto dolce e rassicurante, che ti mette immediatamente a tuo agio e ti aiuta a rilassarti.",
+        "name": "Daniele, Italia"
       },
       {
-        "quote": "Il programma mi ha dato struttura senza mai sembrare rigido. Consigliatissimo.",
-        "name": "Luca F."
+        "quote": "Il nostro percorso di coaching mi ha accompagnata in un profondo processo di riflessione e crescita personale. Ho acquisito maggiore chiarezza su ciò che contava davvero per me e ho trovato il coraggio di fare due importanti cambiamenti nella mia vita.",
+        "name": "Eleonora, Italia"
       }
     ],
     "faq": {
@@ -50,35 +50,77 @@
       "cta": "Leggi le domande frequenti",
       "items": [
         {
-          "q": "Quanto dura il programma?",
-          "a": "Il programma dura 8 settimane, con una sessione a settimana più supporto via email tra un incontro e l'altro."
+          "q": "Devo avere già esperienza con il coaching?",
+          "a": "Assolutamente no. Che tu abbia già fatto terapia, coaching, meditazione, altre esperienze di crescita personale o nessuna, il percorso è pensato per partire da dove ti trovi."
         },
         {
-          "q": "Le sessioni sono online o in presenza?",
-          "a": "Sono disponibili entrambe le opzioni: scegli quella più adatta a te al momento della prenotazione."
+          "q": "Qual è la differenza tra coaching e terapia?",
+          "a": "Coaching e terapia hanno finalità diverse. Il coaching si concentra su dove sei oggi, dove vuoi andare e su ciò che può aiutarti a muoverti in quella direzione. Possiamo guardare al passato per comprenderlo e avere un po' di contesto, ma il nostro lavoro riguarda soprattutto la consapevolezza, le possibilità di scelta e il modo in cui puoi agire nel presente per costruire il tuo futuro."
         },
         {
-          "q": "Serve avere già esperienza di coaching?",
-          "a": "Assolutamente no. Il programma è pensato per incontrarti esattamente dove sei."
+          "q": "Quanto dura una sessione di coaching?",
+          "a": "La sessione dura un'ora e si svolge ogni due settimane. Il tempo tra una sessione e l'altra è una parte importante del percorso: ti dà l'opportunità di sperimentare, osservare cosa succede e fare esperienza di alcune delle dinamiche di cui abbiamo parlato."
+        },
+        {
+          "q": "Quanto dura un percorso di coaching?",
+          "a": "Dipende dai tuoi obiettivi, da ciò che sta accadendo nella tua vita e dal punto in cui ti trovi nel tuo percorso di scoperta di te. Ne parleremo insieme e capiremo cosa ha senso nel tuo caso."
+        },
+        {
+          "q": "Quando devo pagare le sessioni?",
+          "a": "Il pagamento deve essere effettuato almeno 24 ore prima di ogni sessione."
+        },
+        {
+          "q": "Cosa succede se non posso partecipare a una sessione o devo spostarla?",
+          "a": "Puoi modificare l'orario o cancellare una sessione gratuitamente fino a 24 ore prima dell'orario concordato. Le cancellazioni o modifiche effettuate con meno di 24 ore di preavviso verranno conteggiate come una sessione, salvo diverso accordo."
         }
       ]
     },
     "contact": {
       "title": "Contatti",
-      "cta": "Mettiti in contatto",
-      "email": "manu@example.com",
-      "phone": "+39 000 000 0000",
-      "instagram": "@manu.coach"
+      "cta": "Parliamone",
+      "intro": "Contattami per prenotare una sessione introduttiva gratuita di un'ora e capire insieme se il coaching con me è quello che stai cercando.",
+      "email": "manuela@teacuplifecoaching.com",
+      "phone": "+39/ 349.780.24.86",
+      "instagram": "@manu.coach",
+      "linkedinLabel": "manuela-zaffarana",
+      "linkedinUrl": "http://www.linkedin.com/in/manuela-zaffarana-7a1942232"
     }
   },
   "coachPage": {
     "title": "Chi è la Coach",
-    "name": "Manu",
+    "name": "Manuela Zaffarana",
     "role": "Life Coach Certificata",
-    "bio": [
-      "Manu aiuta le persone da oltre dieci anni a passare dal sentirsi bloccate al sentirsi chiare, sicure e padrone della propria direzione.",
-      "Il suo approccio unisce obiettivi concreti a un dialogo onesto e umano — niente tecnicismi, niente giudizi, solo strumenti reali che funzionano.",
-      "Crede che il cambiamento duraturo avvenga attraverso piccoli passi costanti, e il suo ruolo è accompagnarti mentre li compi."
+    "introHeading": "Qualcosa Su Di Me",
+    "bioSections": [
+      {
+        "heading": "Da Dove Vengo E Dove Sono Stata",
+        "paragraphs": [
+          "Sono italiana, sposata con un ragazzo olandese. Ho vissuto in Olanda per 17 anni prima di tornare in Italia nel 2026, anche se continuiamo a trascorrere molto tempo lì.",
+          "Dopo l'università, ho vissuto e lavorato a Londra per più di un anno, per migliorare il mio inglese e vivere un'esperienza all'estero."
+        ]
+      },
+      {
+        "heading": "Cosa Ho Studiato",
+        "paragraphs": [
+          "Ho una laurea quinquennale in Psicologia conseguita presso l'Università degli Studi di Roma \"La Sapienza\".",
+          "Quando sono entrata in Unilever, sono rimasta affascinata dall'ambiente internazionale, dalle persone e dai valori aziendali. Sono rimasta a lavorare lì per 20 anni, imparando molto sulla leadership, sulle organizzazioni e sul comportamento umano.",
+          "Nel 2017 ho deciso di integrare la mia formazione in Psicologia nel mio lavoro e di specializzarmi nel Life Coaching, formandomi nei modelli Co-Active e ORSC."
+        ]
+      },
+      {
+        "heading": "Dove Ho Lavorato",
+        "paragraphs": [
+          "Ho aperto la mia attività di coaching privata nel 2020, mentre lavoravo ancora nel Marketing a Unilever.",
+          "La forte attenzione di Unilever alle persone e alla salute mentale mi ha dato l'opportunità di fare coaching con persone e team all'interno dell'azienda e di contribuire a programmi dedicati alla salute mentale e al purpose, parallelamente alla mia attività privata di coaching."
+        ]
+      },
+      {
+        "heading": "Cosa Mi Dà Energia E Gioia",
+        "paragraphs": [
+          "La mia più grande fonte di energia è la connessione autentica con altre persone. Amo creare occasioni per festeggiare e trascorrere del tempo di qualità insieme.",
+          "Quando sono per conto mio, mi dedico all'artigianato creativo e al cucito. Spesso creo regali o decorazioni per un evento, e tutto questo mi riporta alla connessione."
+        ]
+      }
     ],
     "qualificationsTitle": "Qualifiche e Certificazioni",
     "qualifications": [
@@ -91,23 +133,24 @@
   },
   "programPage": {
     "title": "Il Programma",
-    "intro": "Un percorso di coaching passo dopo passo, pensato per portarti da dove sei a dove vuoi arrivare.",
+    "introHeading": "Cosa Aspettarti Dal Mio Coaching",
+    "intro": "",
     "sections": [
       {
-        "heading": "Di cosa si tratta",
-        "body": "Un programma di coaching individuale di 8 settimane che unisce sessioni settimanali dal vivo a strumenti pratici da usare da subito."
+        "heading": "Non Do Risposte, Faccio Domande",
+        "body": "In questo modo, quando troviamo insieme le risposte, sono significative perché vengono da te. E chi ti conosce meglio di te?"
       },
       {
-        "heading": "A chi è rivolto",
-        "body": "A chiunque si senta pronto al cambiamento ma non sappia da dove iniziare — nel lavoro, nelle relazioni o nel proprio senso di scopo."
+        "heading": "Il Tuo Percorso, I Tuoi Tempi",
+        "body": "Possiamo dare uno sguardo al passato per avere un po' di contesto e di riferimento, ma il nostro lavoro sarà concentrato sul presente e sulla costruzione del futuro che desideri davvero. Il percorso sarà adattato a ciò di cui hai bisogno, a dove vuoi andare e al punto in cui ti trovi nel tuo percorso di scoperta di te. Ti darò qualche piccola spinta, ma lavoreremo sempre rispettando i tuoi tempi."
       },
       {
-        "heading": "Come funziona",
-        "body": "Ogni settimana si costruisce sulla precedente: fissiamo obiettivi chiari, lavoriamo su ciò che ti blocca e monitoriamo insieme i progressi reali."
+        "heading": "La Nostra Relazione Conta",
+        "body": "La nostra relazione crea lo spazio, l'energia e la sicurezza necessarie per la tua trasformazione. Ne avremo cura."
       },
       {
-        "heading": "Cosa porterai a casa",
-        "body": "Una chiara mappa personale, abitudini pratiche destinate a durare, e la sicurezza per continuare anche dopo la fine del programma."
+        "heading": "Il Tuo Purpose Come Bussola",
+        "body": "Una delle cose che potremo esplorare è il tuo purpose: ciò che conta per te, ciò che dà energia e significato alla tua vita. Troveremo una frase semplice ma potente che lo racchiuda, così da guidarti nei momenti di indecisione: quale senti sia la scelta giusta quando sei in sintonia con il tuo purpose? Il mio purpose è \"aiutarti a trovare la strada per il Paese delle Meraviglie e ad attraversarlo.\""
       }
     ]
   },

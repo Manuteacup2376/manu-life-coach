@@ -81,10 +81,13 @@ function renderHome(content) {
   if (contactList) {
     contactList.innerHTML = `
       <li>✉️ <a href="mailto:${h.contact.email}">${escapeHtml(h.contact.email)}</a></li>
-      <li>📞 <a href="tel:${h.contact.phone}">${escapeHtml(h.contact.phone)}</a></li>
+      <li>📞 <a href="tel:${h.contact.phone.replace(/[^+\d]/g, "")}">${escapeHtml(h.contact.phone)}</a></li>
       <li>📷 ${escapeHtml(h.contact.instagram)}</li>
+      <li>💼 <a href="${h.contact.linkedinUrl}" target="_blank" rel="noopener">${escapeHtml(h.contact.linkedinLabel)}</a></li>
     `;
   }
+  setText("#contactCta", h.contact.cta);
+  setText("#contactIntro", h.contact.intro);
 
   const heroImg = document.getElementById("heroPhoto");
   if (heroImg) heroImg.alt = h.heroImageAlt;
@@ -110,15 +113,24 @@ function renderCoachPage(content) {
   setText("#coachTitle", c.title);
   setText("#coachName", c.name);
   setText("#coachRole", c.role);
+  setText("#coachIntroHeading", c.introHeading || "");
   setText("#qualificationsTitle", c.qualificationsTitle);
 
   const bio = document.getElementById("coachBio");
   if (bio) {
     bio.innerHTML = "";
-    c.bio.forEach((para) => {
-      const p = document.createElement("p");
-      p.textContent = para;
-      bio.appendChild(p);
+    c.bioSections.forEach((section) => {
+      const wrap = document.createElement("div");
+      wrap.className = "bio-section";
+      const h3 = document.createElement("h3");
+      h3.textContent = section.heading;
+      wrap.appendChild(h3);
+      section.paragraphs.forEach((para) => {
+        const p = document.createElement("p");
+        p.textContent = para;
+        wrap.appendChild(p);
+      });
+      bio.appendChild(wrap);
     });
   }
 
@@ -140,7 +152,13 @@ function renderCoachPage(content) {
 function renderProgramPage(content) {
   const p = content.programPage;
   setText("#programTitle", p.title);
-  setText("#programIntro", p.intro);
+  setText("#programIntroHeading", p.introHeading || "");
+
+  const introEl = document.getElementById("programIntro");
+  if (introEl) {
+    introEl.textContent = p.intro || "";
+    introEl.style.display = p.intro ? "" : "none";
+  }
 
   const sections = document.getElementById("programSections");
   if (sections) {

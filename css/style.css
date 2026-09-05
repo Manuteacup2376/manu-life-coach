@@ -313,6 +313,20 @@ a { color: inherit; }
 
 .info-box h2 { margin-top: 0; }
 
+.contact-cta {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ink);
+  margin: -8px 0 8px;
+}
+
+.contact-intro {
+  font-size: 14px;
+  color: var(--ink-soft);
+  margin: 0 0 18px;
+}
+
 .info-box details {
   border-top: 1px solid var(--cream-deep);
   padding: 12px 0;
@@ -395,11 +409,41 @@ a { color: inherit; }
   margin: 0 0 18px;
 }
 
-.bio p {
-  font-size: 16px;
-  max-width: 62ch;
-  color: var(--ink);
+.coach-intro-heading {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--teal-deep);
+  margin: 0 0 16px;
 }
+
+.bio-section {
+  margin-bottom: 28px;
+}
+
+.bio-section:last-child {
+  margin-bottom: 0;
+}
+
+.bio-section h3 {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0 0 8px;
+}
+
+.bio-section p {
+  font-size: 15px;
+  max-width: 62ch;
+  color: var(--ink-soft);
+  margin: 0 0 10px;
+}
+
+.bio-section p:last-child {
+  margin-bottom: 0;
+}
+
 
 .qualifications {
   margin: 56px 0 40px;
@@ -422,7 +466,7 @@ a { color: inherit; }
 
 .qual-item img {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 3 / 4;
   object-fit: cover;
   border: 1px solid var(--cream-deep);
   background: var(--paper);
@@ -435,12 +479,20 @@ a { color: inherit; }
 }
 
 /* ===== Program page ===== */
-.program-intro {
-  font-size: 19px;
+.program-intro-heading {
   font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 600;
   color: var(--teal-deep);
+  margin: 8px 0 4px;
+}
+
+.program-intro {
+  font-size: 16px;
+  font-family: var(--font-body);
+  color: var(--ink-soft);
   max-width: 60ch;
-  margin: 18px 0 40px;
+  margin: 0 0 30px;
 }
 
 .program-sections {
